@@ -8,7 +8,7 @@ terraform {
 
   backend "azurerm" {
     resource_group_name  = "rg-githubtfstates"
-    storage_account_name = "miszelsandbox"
+    storage_account_name = "miszelgovernance"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
     use_oidc             = true
