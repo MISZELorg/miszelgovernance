@@ -90,3 +90,10 @@ resource "azurerm_management_group" "mg_hybrid" {
   parent_management_group_id = azurerm_management_group.mg_lzs.id
   depends_on                 = [azurerm_management_group.mg_lzs]
 }
+
+resource "azurerm_management_group" "mg_hybrid2" {
+  display_name               = var.hybrid_mg_name2
+  name                       = var.hybrid_mg_name2
+  parent_management_group_id = azurerm_management_group.mg_lzs.id
+  depends_on                 = [azurerm_management_group.mg_lzs]
+}
