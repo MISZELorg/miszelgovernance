@@ -93,7 +93,7 @@ resource "azurerm_management_group" "mg_hybrid" {
 
 resource "azurerm_management_group" "mg_hybrid2" {
   display_name               = var.hybrid_mg_name2
-  name                       = data.hybrid_mg_name2_name
-  parent_management_group_id = data.azurerm_user_assigned_identity.uami-audit-logs.principal_id
+  name                       = data.azurerm_management_group.mg_hybrid_id2.name
+  parent_management_group_id = azurerm_management_group.mg_lzs.id
   depends_on                 = [azurerm_management_group.mg_lzs]
 }
