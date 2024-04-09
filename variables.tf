@@ -15,6 +15,7 @@ variable "connectivity_mg_name" {}
 variable "corp_mg_name" {}
 variable "online_mg_name" {}
 variable "hybrid_mg_name" {}
+variable "hybrid_mg_name2" {}
 
 variable "sub_audit_id" {}
 variable "sub_sandbox_id" {}

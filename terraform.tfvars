@@ -15,6 +15,7 @@ connectivity_mg_name   = "mg-connectivity"
 corp_mg_name           = "mg-corp"
 online_mg_name         = "mg-online"
 hybrid_mg_name         = "mg-hybrid"
+hybrid_mg_name2        = "mg-hybrid2"
 
 sub_audit_id          = "/subscriptions/f34f6196-9ca8-445c-8e11-1db7ece881d4"
 sub_sandbox_id        = "/subscriptions/456fb512-af18-4d07-861c-3ee54eae9181"
