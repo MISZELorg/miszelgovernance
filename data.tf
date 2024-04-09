@@ -50,6 +50,6 @@ data "azurerm_management_group" "mg_hybrid_id" {
   name = var.hybrid_mg_name
 }
 
-data "azurerm_management_group" "mg_hybrid_id2" {
-  name = var.hybrid_mg_name2
-}
+# data "azurerm_management_group" "mg_hybrid_id2" {
+#   name = var.hybrid_mg_name2
+# }
