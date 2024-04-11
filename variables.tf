@@ -20,7 +20,9 @@ variable "sub_audit_id" {}
 variable "sub_sandbox_id" {}
 variable "sub_alzcorp_id" {}
 variable "sub_alzonline_id" {}
+variable "sub_alzhybrid_id" {}
 variable "sub_sharedservices_id" {}
 variable "sub_identity_id" {}
 variable "sub_management_id" {}
 variable "sub_connectivity_id" {}
+variable "sub_management2_id" {}

@@ -22,6 +22,12 @@ resource "azurerm_management_group_subscription_association" "sub_alzonline_asso
   depends_on          = [azurerm_management_group.mg_online]
 }
 
+resource "azurerm_management_group_subscription_association" "sub_alzhybrid_assoc" {
+  management_group_id = data.azurerm_management_group.mg_online_id.id
+  subscription_id     = var.sub_alzhybrid_id
+  depends_on          = [azurerm_management_group.mg_online]
+}
+
 resource "azurerm_management_group_subscription_association" "sub_sharedservices_assoc" {
   management_group_id = data.azurerm_management_group.mg_sharedservices_id.id
   subscription_id     = var.sub_sharedservices_id
@@ -44,4 +50,10 @@ resource "azurerm_management_group_subscription_association" "sub_connectivity_a
   management_group_id = data.azurerm_management_group.mg_connectivity_id.id
   subscription_id     = var.sub_connectivity_id
   depends_on          = [azurerm_management_group.mg_connectivity]
+}
+
+resource "azurerm_management_group_subscription_association" "sub_management2_assoc" {
+  management_group_id = data.azurerm_management_group.mg_management_id.id
+  subscription_id     = var.sub_management2_id
+  depends_on          = [azurerm_management_group.mg_management]
 }
