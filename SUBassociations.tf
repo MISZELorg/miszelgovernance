@@ -23,7 +23,7 @@ resource "azurerm_management_group_subscription_association" "sub_alzonline_asso
 }
 
 resource "azurerm_management_group_subscription_association" "sub_alzhybrid_assoc" {
-  management_group_id = data.azurerm_management_group.mg_online_id.id
+  management_group_id = data.azurerm_management_group.mg_hybrid_id.id
   subscription_id     = var.sub_alzhybrid_id
   depends_on          = [azurerm_management_group.mg_online]
 }
