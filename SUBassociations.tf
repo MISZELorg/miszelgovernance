@@ -41,9 +41,13 @@ resource "azurerm_management_group_subscription_association" "sub_identity_assoc
 }
 
 resource "azurerm_management_group_subscription_association" "sub_management_assoc" {
-  management_group_id = data.azurerm_management_group.mg_management_id.id
+  management_group_id = data.azurerm_management_group.mg_decom_id.id
   subscription_id     = var.sub_management_id
   depends_on          = [azurerm_management_group.mg_management]
+  lifecycle {
+    create_before_destroy = true
+  }
+
 }
 
 resource "azurerm_management_group_subscription_association" "sub_connectivity_assoc" {
