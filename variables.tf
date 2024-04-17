@@ -1,7 +1,3 @@
-# examples
-# variable "location" {}
-# variable "resource_group_name" {}
-
 variable "top_mg_name" {}
 variable "platform_mg_name" {}
 variable "lzs_mg_name" {}
@@ -26,17 +22,3 @@ variable "sub_identity_id" {}
 variable "sub_management_id" {}
 variable "sub_connectivity_id" {}
 variable "sub_management2_id" {}
-
-variable "l2mg_map" {
-  type = map(object({
-    name = string
-  }))
-  default = {
-    "l2mg1" = {
-      name = "l2mg1"
-    }
-    "l2mg2" = {
-      name = "l2mg2"
-    }
-  }
-}
