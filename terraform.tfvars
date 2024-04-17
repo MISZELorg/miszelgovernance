@@ -1,7 +1,3 @@
-# examples
-# location            = "northeurope"
-# resource_group_name = "rg-test1"
-
 top_mg_name            = "mg-miszel"
 platform_mg_name       = "mg-platform"
 lzs_mg_name            = "mg-landing-zones"
