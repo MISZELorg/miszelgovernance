@@ -29,8 +29,7 @@ variable "sub_management2_id" {}
 
 variable "l2mg_map" {
   type = map(object({
-    name     = string
-    location = string
+    name = string
   }))
   default = {
     "l2mg1" = {
