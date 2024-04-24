@@ -48,6 +48,6 @@ resource "azurerm_management_group_subscription_association" "sub_connectivity_a
 
 resource "azurerm_management_group_subscription_association" "sub_management2_assoc" {
   management_group_id = data.azurerm_management_group.mg_management_id.id
-  subscription_id     = var.sub_management2_id
+  subscription_id     = var.sub_management_id
   depends_on          = [azurerm_management_group.mg_management]
 }
