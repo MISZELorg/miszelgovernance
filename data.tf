@@ -23,7 +23,8 @@ data "azurerm_management_group" "mg_audit_id" {
 }
 
 data "azurerm_management_group" "mg_backend_id" {
-  name = var.backend_mg_name
+  name       = var.backend_mg_name
+  depends_on = [azurerm_management_group.mg_backend]
 }
 
 data "azurerm_management_group" "mg_sharedservices_id" {
