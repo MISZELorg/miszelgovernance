@@ -14,7 +14,7 @@ variable "online_mg_name" {}
 variable "hybrid_mg_name" {}
 
 variable "sub_audit_id" {}
-variable "sub_backend_id" {}
+# variable "sub_backend_id" {}
 variable "sub_sandbox_id" {}
 variable "sub_alzcorp_id" {}
 variable "sub_alzonline_id" {}
