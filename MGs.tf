@@ -40,12 +40,12 @@ resource "azurerm_management_group" "mg_audit" {
   depends_on                 = [azurerm_management_group.mg_top]
 }
 
-# resource "azurerm_management_group" "mg_backend" {
-#   display_name               = var.backend_mg_name
-#   name                       = var.backend_mg_name
-#   parent_management_group_id = azurerm_management_group.mg_top.id
-#   depends_on                 = [azurerm_management_group.mg_top]
-# }
+resource "azurerm_management_group" "mg_backend" {
+  display_name               = var.backend_mg_name
+  name                       = var.backend_mg_name
+  parent_management_group_id = azurerm_management_group.mg_top.id
+  depends_on                 = [azurerm_management_group.mg_top]
+}
 
 # Create the grandchild management groups
 
