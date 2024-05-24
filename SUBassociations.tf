@@ -4,11 +4,11 @@ resource "azurerm_management_group_subscription_association" "sub_audit_assoc" {
   depends_on          = [azurerm_management_group.mg_audit]
 }
 
-# resource "azurerm_management_group_subscription_association" "sub_backend_assoc" {
-#   management_group_id = data.azurerm_management_group.mg_backend_id.id
-#   subscription_id     = var.sub_backend_id
-#   depends_on          = [azurerm_management_group.mg_backend]
-# }
+resource "azurerm_management_group_subscription_association" "sub_backend_assoc" {
+  management_group_id = data.azurerm_management_group.mg_backend_id.id
+  subscription_id     = var.sub_backend_id
+  depends_on          = [azurerm_management_group.mg_backend]
+}
 
 resource "azurerm_management_group_subscription_association" "sub_sandbox_assoc" {
   management_group_id = data.azurerm_management_group.mg_sandbox_id.id
