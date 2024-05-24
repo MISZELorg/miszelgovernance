@@ -4,7 +4,7 @@ variable "lzs_mg_name" {}
 variable "decom_mg_name" {}
 variable "sandbox_mg_name" {}
 variable "audit_mg_name" {}
-# variable "backend_mg_name" {}
+variable "backend_mg_name" {}
 variable "sharedservices_mg_name" {}
 variable "identity_mg_name" {}
 variable "management_mg_name" {}
